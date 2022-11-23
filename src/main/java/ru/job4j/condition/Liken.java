@@ -6,7 +6,7 @@ public class Liken {
         int second = 9;
 
         boolean result = first > second;
-                System.out.println(result);
+        System.out.println(result);
 
         boolean result1 = first < second;
         System.out.println(result1);
