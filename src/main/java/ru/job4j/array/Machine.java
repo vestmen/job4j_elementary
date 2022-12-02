@@ -14,7 +14,6 @@ public class Machine {
                 rsl[size++] = coin;
             }
         }
-
         return Arrays.copyOf(rsl, size);
     }
 }
