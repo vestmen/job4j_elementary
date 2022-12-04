@@ -7,7 +7,7 @@ public class Defragment {
                 for (int j = i; j < array.length; j++) {
                     if (array[j] != null) {
                         array[i] = array[j];
-                        array[i] = null;
+                        array[j] = null;
                         break;
                     }
                 }
