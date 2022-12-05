@@ -2,11 +2,9 @@ package ru.job4j.array;
 
 public class JavaNameValidator {
     public static boolean isNameValid(String name) {
-        boolean valid = true;
+        boolean valid;
         char[] array = name.toCharArray();
-        if (name.isEmpty() || Character.isUpperCase(name.charAt(0)) || Character.isDigit(array[0])) {
-            valid = false;
-        }
+        valid = !(name.isEmpty() || Character.isUpperCase(name.charAt(0)) || Character.isDigit(array[0]));
         for (int index = 1; index < array.length; index++) {
             if (isSpecialSymbol(index) || isUpperLatinLetter(index) || isLowerLatinLetter(index) || Character.isDigit(index)) {
                 valid = true;
